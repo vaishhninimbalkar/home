@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>simple web app</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        #app{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid aqua;
+        }
+        #todolist{
+            list-style: none;
+            padding:0
+        }
+        #todolist li{
+            background: white ;
+            margin: 5px 0;
+            padding: 10px;
+            border:1px solid #ddd;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Todo List</h1>
+        <input type="text" id="todoInput" placeholder="enter a todo item">
+        <button onclick="addTodo()">Add todo</button>
+        <ul id="todoList"></ul>
+        </div>
+</body>
+</html>
